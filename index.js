@@ -94,7 +94,7 @@ async function scrapeArticles() {
     </html>
   `;
 
-  fs.writeFileSync("articles.html", html);
+  fs.writeFileSync("index.html", html);
   fs.writeFileSync("articles.json", JSON.stringify(allArticles, null, 2));
 
   await browser.close();
